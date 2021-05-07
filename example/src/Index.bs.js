@@ -12,7 +12,7 @@ var imageContext = Curry._2(DOM$ReView.DomCore.Context.make, "ImageContext", ini
 
 var testContext = Curry._2(DOM$ReView.DomCore.Context.make, "TestContext", initialImage);
 
-var Test = Caml_exceptions.create("Index-ReasonReactExamples.Test");
+var Test = /* @__PURE__ */Caml_exceptions.create("Index-ReasonReactExamples.Test");
 
 function make(param, param$1) {
   var state = Curry._1(DOM$ReView.useContext, imageContext);
@@ -49,7 +49,7 @@ function make$2(param, param$1) {
               ref: undefined
             }, {
               tag: "div",
-              attributes: { },
+              attributes: {},
               children: [
                 Curry._2(ImageSrc.make, {
                       key: undefined,
